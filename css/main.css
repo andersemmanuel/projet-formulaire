@@ -1,0 +1,82 @@
+body {
+    background: #f8f9fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #3b3b6d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+form {
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(60,60,100,0.08);
+    min-width: 340px;
+    margin-top: 24px;
+}
+
+label {
+    font-weight: 500;
+    color: #3b3b6d;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f4f6fb;
+    transition: border 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1.5px solid #3b3b6d;
+    outline: none;
+}
+
+input[type="checkbox"] {
+    accent-color: #3b3b6d;
+    margin-right: 6px;
+}
+
+button[type="submit"] {
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #a93226;
+}
+
+footer {
+    text-align: center;
+    color: #888;
+    padding: 18px 0 8px 0;
+    font-size: 0.95rem;
+} 
