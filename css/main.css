@@ -122,8 +122,8 @@ button[type="submit"]:active {
 footer {
     text-align: center;
     color: #666;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    padding: 6px 0;
+    font-size: 0.75rem;
     background: #fff;
     border-top: 1px solid #eee;
 }
