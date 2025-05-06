@@ -11,7 +11,7 @@
         <h1>Administration</h1>
     </header>
     <main>
-        <h2>Connexion <span style="background:#e0e0ff; color:#3b3b6d; padding:2px 6px; border-radius:4px;">PHP</span></h2>
+        <h2>Connexion<span>PHP</span></h2>
         <?php
         if (isset($_POST['submit'])) {
             $login = htmlspecialchars($_POST['login']);

@@ -1,5 +1,9 @@
 body {
     background: #e9ecef;
+   /* background-image: url('../asset/téléchargement (2).jpeg');*/
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat;   
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
