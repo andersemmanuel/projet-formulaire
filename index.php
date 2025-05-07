@@ -16,20 +16,20 @@ $resultat = traiterFormulaire();
     </header>
     <main>
         <?php afficherResultat($resultat); ?>
-        <form method="post" action="index.php">
+        <form class="styled-form" method="post" action="index.php">
             <fieldset>
                 <legend>Remplir les champs</legend>
                 <div class="form-group">
-                    <label for="login"><b>Login</b></label>
+                    <label for="login"> Login </label>
                     <input type="email" id="login" name="login" required placeholder="Votre login">
                 </div>
                 <div class="form-group">
-                    <label for="password"><b>Mot de passe</b></label>
+                    <label for="password"> Mot de passe </label>
                     <input type="password" id="password" name="password" required placeholder="Votre mot de passe">
                 </div>
                 <div class="checkbox-label">
                     <input type="checkbox" id="admin" name="admin">
-                    <label for="admin"><b>Vous êtes admin</b> <span class="lock">🔒</span></label>
+                    <label for="admin"> Vous êtes admin <span class="lock">🔒</span></label>
                 </div>
                 <button type="submit" name="submit">Envoyer</button>
             </fieldset>
