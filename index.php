@@ -1,3 +1,7 @@
+<?php
+require_once 'controller/controller.php';
+$resultat = traiterFormulaire();
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,7 +15,8 @@
         <h1 class="main-title">Compléter le code <span class="badge-php">PHP</span> suivant</h1>
     </header>
     <main>
-        <form class="styled-form" method="post" action="">
+        <?php afficherResultat($resultat); ?>
+        <form method="post" action="">
             <fieldset>
                 <legend>Remplir les champs</legend>
                 <div class="form-group">
@@ -29,18 +34,6 @@
                 <button type="submit" name="submit">Envoyer</button>
             </fieldset>
         </form>
-        <?php
-        if (isset($_POST['submit'])) {
-            $login = htmlspecialchars($_POST['login']);
-            $password = htmlspecialchars($_POST['password']);
-            $isAdmin = isset($_POST['admin']) ? 'Oui' : 'Non';
-            echo "<div class='result'>";
-            echo "<p>Email : $login</p>";
-            echo "<p>Mot de passe : $password</p>";
-            echo "<p>Statut admin : $isAdmin</p>";
-            echo "</div>";
-        }
-        ?>
     </main>
     <footer>
         <p>&copy; - PHP - 2025</p>
