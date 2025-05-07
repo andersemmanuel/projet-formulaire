@@ -16,7 +16,7 @@
         if (isset($_POST['submit'])) {
             $login = htmlspecialchars($_POST['login']);
             $password = htmlspecialchars($_POST['password']);
-            $isAdmin = isset($_POST['admin']) ? 'Oui' : 'Non';
+            $isAdmin = isset($_POST['admin']) ? '1' : '0';
 
             echo "<div class='result'>";
             echo "<p>Email : $login</p>";

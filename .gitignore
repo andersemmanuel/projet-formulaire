@@ -1,21 +1,17 @@
-# Fichiers de configuration sensibles
+
 .env
 config.php
 
-# Fichiers temporaires
 *.log
 *.tmp
 *.temp
 
-# Fichiers système
 .DS_Store
 Thumbs.db
 
-# Dossiers de dépendances
 /vendor/
 /node_modules/
 
-# Fichiers d'IDE
 .idea/
 .vscode/
 *.sublime-workspace

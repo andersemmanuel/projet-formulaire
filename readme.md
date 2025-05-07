@@ -29,7 +29,3 @@ Un projet de formulaire web développé en PHP avec une interface utilisateur mo
 - Formulaire de connexion
 - Interface utilisateur responsive
 - Design moderne et épuré
-
-## Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
