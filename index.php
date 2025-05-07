@@ -8,16 +8,32 @@
 </head>
 <body>
     <header>
-        <h1>Administration</h1>
+        <h1 class="main-title">Compléter le code <span class="badge-php">PHP</span> suivant</h1>
     </header>
     <main>
-        <h2>Connexion<span>PHP</span></h2>
+        <form class="styled-form" method="post" action="">
+            <fieldset>
+                <legend>Remplir les champs</legend>
+                <div class="form-group">
+                    <label for="login"><b>Login</b></label>
+                    <input type="email" id="login" name="login" required placeholder="Votre login">
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Mot de passe</b></label>
+                    <input type="password" id="password" name="password" required placeholder="Votre mot de passe">
+                </div>
+                <div class="checkbox-label">
+                    <input type="checkbox" id="admin" name="admin">
+                    <label for="admin"><b>Vous êtes admin</b> <span class="lock">🔒</span></label>
+                </div>
+                <button type="submit" name="submit">Envoyer</button>
+            </fieldset>
+        </form>
         <?php
         if (isset($_POST['submit'])) {
             $login = htmlspecialchars($_POST['login']);
             $password = htmlspecialchars($_POST['password']);
-            $isAdmin = isset($_POST['admin']) ? '1' : '0';
-
+            $isAdmin = isset($_POST['admin']) ? 'Oui' : 'Non';
             echo "<div class='result'>";
             echo "<p>Email : $login</p>";
             echo "<p>Mot de passe : $password</p>";
@@ -25,27 +41,9 @@
             echo "</div>";
         }
         ?>
-        <form method="post" action="">
-            <div class="form-group">
-                <label for="login">Adresse email</label>
-                <input type="email" id="login" name="login" required placeholder="exemple@email.com">
-            </div>
-
-            <div class="form-group">
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required placeholder="Votre mot de passe">
-            </div>
-
-            <div class="checkbox-label">
-                <input type="checkbox" id="admin" name="admin">
-                <label for="admin">Vous êtes administrateur 🔒</label>
-            </div>
-
-            <button type="submit" name="submit">Se connecter</button>
-        </form>
     </main>
     <footer>
-        <p>&copy; 2025 - Administration PHP</p>
+        <p>&copy; - PHP - 2025</p>
     </footer>
 </body>
 </html>
