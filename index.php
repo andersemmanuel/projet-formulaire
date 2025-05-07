@@ -16,7 +16,7 @@ $resultat = traiterFormulaire();
     </header>
     <main>
         <?php afficherResultat($resultat); ?>
-        <form method="post" action="">
+        <form method="post" action="index.php">
             <fieldset>
                 <legend>Remplir les champs</legend>
                 <div class="form-group">
